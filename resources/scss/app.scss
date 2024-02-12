@@ -1,7 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
 @import './partials/variables';
 
-.bg-up-header{
+//HEADER
+
+.bg-main-blue{
     background-color: $main_blue;
 
     .up-header{
@@ -55,5 +57,99 @@
         margin-bottom: 10px;
         border-bottom: 2px solid $main_blue;
         text-align: end;
+    }
+}
+
+
+//FOOTER
+
+.banner-card{
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+
+    img{
+        width: 25%;
+    }
+
+    p{
+        color: white;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+}
+
+.bg-image{
+    background-image: url('../img/footer-bg.jpg');
+
+    width: 100%;
+
+
+    .lists{
+        display: flex;
+        flex-wrap: nowrap;
+        
+        .col{
+            margin: 0 30px;
+
+            max-width: fit-content;
+            h3{
+                color: white;
+                text-transform: uppercase;
+                margin: 10px 0;
+            }
+            ul{
+                list-style: none;
+                padding-left: 0;
+                
+                li{
+                    color: lightgrey;
+                }
+            }
+        }
+    }
+
+    img{
+        margin: -40px 0;
+    }
+}
+
+.bg-grey{
+    background-color: rgb(48, 48, 48);
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+
+    .footer-banner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+
+        button{
+            background-color: transparent;
+            border: $main_blue 1px solid;
+
+            p{
+                color: white;
+                padding: 10px;
+                font-weight: 600;
+            }
+        }
+
+        .social-links{
+            display: flex;
+            align-items: center;
+
+            h3{
+                color: $main_blue;
+                font-weight: 600;
+                margin: 10px;
+            }
+
+            img{
+                margin: 0 5px;
+            }
+        }
     }
 }

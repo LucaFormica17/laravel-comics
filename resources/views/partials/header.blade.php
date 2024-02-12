@@ -1,5 +1,5 @@
 <header>
-    <div class="bg-up-header">
+    <div class="bg-main-blue">
         <div class="container">
             <div class="row">
                 <div class="col-12">

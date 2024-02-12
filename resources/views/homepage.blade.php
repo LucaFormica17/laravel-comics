@@ -22,5 +22,5 @@
 
         </main>
     </body>
-
+    @include('partials/footer')
 </html>
