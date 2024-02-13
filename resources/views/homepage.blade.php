@@ -20,9 +20,26 @@
     <body>
         <main>
             <div class="jumbotron">
-                {{-- <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt=""> --}}
+                <div class="current">
+                    current series
+                </div>  
             </div>
-            <div class="container"></div>
+            <div class="bg-dark">
+                <div class="container">
+                    <div class="row py-5">
+                        @foreach ($comics as $comic)
+                            <div class="col-2">
+                                <div class="square-img">
+                                    <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                                    <span class="text-white"> 
+                                        {{$comic['title']}}    
+                                    </span>
+                                </div>
+                            </div>    
+                        @endforeach
+                    </div>
+                </div>
+            </div>
         </main>
     </body>
     @include('partials/footer')

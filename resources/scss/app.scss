@@ -38,17 +38,19 @@
             &.active{
                 color: $main_blue;
                 position: relative;
+                
+                
+                &::after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    height: 3px;
+                    width: 100%;
+                    background-color: $main_blue;
+                }
             }
 
-            &::after{
-                content: '';
-                position: absolute;
-                bottom: 0;
-                left: 0;
-                height: 3px;
-                width: 100%;
-                background-color: $main_blue;
-            }
         }
     }
 
@@ -67,7 +69,37 @@
     background-image: url('../img/jumbotron.jpg');
     background-repeat: no-repeat;
     background-position: top;
+    position: relative;
 
+    .current{
+        width: max-content;
+        padding: 10px;
+        color: white;
+        background-color: $main_blue;
+        text-transform: uppercase;
+        font-weight: bolder;
+        position: absolute;
+        bottom: -25px;
+        left: 20%;
+    }
+
+}
+
+
+.square-img{
+    width: 100%;
+    height: 100%;
+    margin: 10px 5px;
+
+    img{
+        width: 100%;
+        height: 80%;
+        padding: 20px 0;
+    }
+
+    span{
+        text-transform: uppercase;
+    }
 }
 
 
@@ -127,7 +159,7 @@
 .bg-grey{
     background-color: rgb(48, 48, 48);
     position: fixed;
-    z-index: 2;
+    z-index: 999;
     width: 100%;
 
     .footer-banner{
