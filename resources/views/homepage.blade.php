@@ -19,7 +19,10 @@
     @include('partials/header')
     <body>
         <main>
-
+            <div class="jumbotron">
+                {{-- <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt=""> --}}
+            </div>
+            <div class="container"></div>
         </main>
     </body>
     @include('partials/footer')
