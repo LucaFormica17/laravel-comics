@@ -10,12 +10,14 @@
             <div class="row py-5">
                 @foreach ($comics as $comic)
                 <div class="col-2">
-                    <div class="square-img">
-                        <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
-                        <span class="text-white"> 
-                            {{$comic['title']}}    
-                        </span>
-                    </div>
+                    <a href="{{route('details', ['param' => $comic['id']])}}">
+                        <div class="square-img">
+                            <img src="{{$comic['thumb']}}" alt="{{$comic['title']}}">
+                            <span class="text-white"> 
+                                {{$comic['title']}}    
+                            </span>
+                        </div>
+                    </a>
                 </div>    
                 @endforeach
             </div>

@@ -17,7 +17,7 @@
                 <div class="header-content">
                     <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="header-logo" class="header-logo">
                     <ul>
-                        <li>character</li>
+                        <li>characters</li>
                         <li class="active">comics</li>
                         <li>movies</li>
                         <li>tv</li>
