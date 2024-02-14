@@ -17,6 +17,10 @@ a{
     }
 }
 
+.bg-lightgrey{
+    background-color: lightgrey;
+}
+
 .header-content{
     display: flex;
     justify-content: space-between;
@@ -200,4 +204,23 @@ a{
             }
         }
     }
+}
+
+
+//details
+
+.my-pos{
+    position: relative;
+    height: 50px;
+
+    img{
+        width: 10%;
+        position: absolute;
+        bottom: 20px;
+        left: 15%;
+    }
+}
+
+.bg-green{
+    background-color: rgb(55, 184, 55);
 }
